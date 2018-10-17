@@ -1,5 +1,3 @@
-SPrO
-
 # Semantic Programming Ontology (SPrO)
 (version 0.2 beta)
 
