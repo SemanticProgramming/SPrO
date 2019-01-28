@@ -6,7 +6,7 @@ We develop a Semantic Programming Ontology (SPrO) that is used for software prog
 Further information on the project is available at http://escience.biowikifarm.net - feel free to contact us at 
 dev@morphdbase.de
 
-This repository contains the Semantic Programming Ontology (SPrO). With it you can specify source code ontologies for your Semantic Web application. In order to execute these source code ontologies you also need the interpreter (https://github.com/SemanticProgramming/Interpreter) and the interface (https://github.com/SemanticProgramming/Interface).
+This repository contains the Semantic Programming Ontology (SPrO). With it you can specify source code ontologies for your Semantic Web application. In order to execute these source code ontologies you also need the interpreter (https://github.com/SemanticProgramming/Interpreter) and the interface (https://github.com/SemanticProgramming/Interface). Basic functionalities are described in the SOCCOMAS source code ontology (SC-Basic; https://github.com/SemanticProgramming/SOCCOMAS).
 
 **Please be aware that this project is ongoing research! This code is for demonstration purposes only. Do not use
  in production environment!**
