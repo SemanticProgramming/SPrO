@@ -860,9 +860,9 @@ Like any other &apos;execution step&apos; annotation, the string part is used fo
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000484 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000484">
-        <rdfs:label>triggers status transition &apos;create new entry&apos; from overlay  [BOOLEAN]</rdfs:label>
+        <rdfs:label>triggers status transition &apos;create new document&apos; from overlay  [BOOLEAN]</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000484</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">This annotation property specifies, whether subsequent execution steps will trigger the status transition &apos;create new entry&apos; and whether it has been triggered from an overlay. If value &apos;true&apos;, the subsequently triggered status transition must take into account that it has been triggered from an overlay.
+        <obi:IAO_0000115 xml:lang="en">This annotation property specifies, whether subsequent execution steps will trigger the status transition &apos;create new document&apos; and whether it has been triggered from an overlay. If value &apos;true&apos;, the subsequently triggered status transition must take into account that it has been triggered from an overlay.
 
 default value = &apos;false&apos;</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000925"/>
@@ -1451,7 +1451,7 @@ Like any other &apos;execution step&apos; annotation, the string part is used fo
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000532 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000532">
-        <rdfs:label>has required input component (this entry&apos;s specific individual of)</rdfs:label>
+        <rdfs:label>has required input component (this document&apos;s specific individual of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000532</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">Same as the object property &apos;has required input component&apos;, with the difference that the range is an individual of the specified class that refers to the entry ID that is currently in focus.
 It specifies an entry component through which a user can provide input that is considered to be required in order for the entry to be valid.</obi:IAO_0000115>
@@ -1531,10 +1531,10 @@ The SPrO variable resource &apos;SPrO_VARIABLE: generated resource [input_59]&ap
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000538 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000538">
-        <rdfs:label>show expanded (this entry&apos;s specific individual of)</rdfs:label>
+        <rdfs:label>show expanded (this document&apos;s specific individual of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000538</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This annotation property specifies an entry component for which the collapse-expand button is set to expanded.
-The range of this property is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this entry ID&apos; refers to).</obi:IAO_0000115>
+The range of this property is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this document version ID&apos; refers to).</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000721"/>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000001053"/>
     </owl:AnnotationProperty>
@@ -1877,11 +1877,11 @@ The SPrO variable resource &apos;SPrO_VARIABLE: identified workflow action&apos;
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000567 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000567">
-        <rdfs:label>object (this entry&apos;s specific individual in memory of)</rdfs:label>
+        <rdfs:label>object (this document&apos;s specific individual in memory of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000567</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;object&apos;, with the difference that the range is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this entry ID&apos; refers to) AND the individual is currently held in memory.
+        <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;object&apos;, with the difference that the range is an individual of the specified class that refers to the document version ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this document version ID&apos; refers to) AND the individual is currently held in memory.
 
-This is for instance used when referring to a specific entry component of which several individuals exist in a given composition.</obi:IAO_0000115>
+This is for instance used when referring to a specific document component of which several individuals exist in a given composition.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000967"/>
     </owl:AnnotationProperty>
     
@@ -2916,9 +2916,9 @@ The generation of a resource is tracked by adding the triple statement to the &a
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000647 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000647">
-        <rdfs:label>update with (this entry&apos;s specific individual of)</rdfs:label>
+        <rdfs:label>update with (this document&apos;s specific individual of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000647</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;update with resource/value&apos;, with the difference that the range is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this entry ID&apos; refers to). Contrary to the annotation &apos;update with resource/value&apos;, this annotation has no values as ranges.</obi:IAO_0000115>
+        <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;update with resource/value&apos;, with the difference that the range is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this document version ID&apos; refers to). Contrary to the annotation &apos;update with resource/value&apos;, this annotation has no values as ranges.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000597"/>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000773"/>
     </owl:AnnotationProperty>
@@ -3407,9 +3407,9 @@ The SPrO variable resource &apos;SPrO_VARIABLE: generated resource [input_43]&ap
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000682 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000682">
-        <rdfs:label>generates resources for entry ID</rdfs:label>
+        <rdfs:label>generates resources for document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000682</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">This specifies the entry for which the resources are generated.</obi:IAO_0000115>
+        <obi:IAO_0000115 xml:lang="en">This specifies the document for which the resources are generated.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000702"/>
     </owl:AnnotationProperty>
     
@@ -3714,9 +3714,9 @@ Each newly generated individual resource is associated with a corresponding SPrO
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000703 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000703">
-        <rdfs:label>switch to entry</rdfs:label>
+        <rdfs:label>switch to document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000703</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">This annotation property specifies an entry ID, which the application uses for representing the composition specified in a previous &apos;execution step: specifications and allocations for hyperlink&apos; in combination with an overlay or a page.</obi:IAO_0000115>
+        <obi:IAO_0000115 xml:lang="en">This annotation property specifies an document version ID, which the application uses for representing the composition specified in a previous &apos;execution step: specifications and allocations for hyperlink&apos; in combination with an overlay or a page.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000721"/>
     </owl:AnnotationProperty>
     
@@ -4045,7 +4045,7 @@ Like any other &apos;execution step&apos; annotation, the string part is used fo
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000726 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000726">
-        <rdfs:label>named graph belongs to entry ID</rdfs:label>
+        <rdfs:label>named graph belongs to document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000726</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">Specifies a particular entry ID. The respective triple statement(s) to which this annotation property relates to must be stored to or loaded from a named graph that belongs to this entry ID.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000887"/>
@@ -4070,9 +4070,9 @@ The SPrO variable resource &apos;SPrO_VARIABLE: identified resource(s) [input_10
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000728 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000728">
-        <rdfs:label>object (this entry&apos;s specific individual of)</rdfs:label>
+        <rdfs:label>object (this document&apos;s specific individual of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000728</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;object&apos;, with the difference that the range is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this entry ID&apos; refers to).
+        <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;object&apos;, with the difference that the range is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this document version ID&apos; refers to).
 
 This is for instance used when referring to a specific entry component of which several individuals exist in a given composition.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000967"/>
@@ -4238,7 +4238,7 @@ The SPrO variable resource &apos;SPrO_VARIABLE: identified resource(s) [input_S]
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000740 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000740">
-        <rdfs:label>add crosslink representation to (this entry&apos;s specific individual of)</rdfs:label>
+        <rdfs:label>add crosslink representation to (this document&apos;s specific individual of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000740</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This annotation specifies an entry component class, to an individual of which a crosslink representation must be added (using the object properties &apos;has entry component&apos; and &apos;entry component of&apos;) of an entry ID that is specified in an accompanying annotation. This information is written to the specified named graph.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000540"/>
@@ -4301,10 +4301,10 @@ The SPrO variable resource &apos;SPrO_VARIABLE: identified resource(s) [input_E]
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000745 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000745">
-        <rdfs:label>triggers &apos;click&apos; for (this entry&apos;s specific individual of)</rdfs:label>
+        <rdfs:label>triggers &apos;click&apos; for (this document&apos;s specific individual of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000745</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This annotation property specifies a GUI component (usually an entry component), for which a user input of type &apos;click&apos; is automatically triggered. 
-The range of this property is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this entry ID&apos; refers to).</obi:IAO_0000115>
+The range of this property is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this document version ID&apos; refers to).</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000850"/>
     </owl:AnnotationProperty>
     
@@ -4376,7 +4376,7 @@ The SPrO variable resource &apos;SPrO_VARIABLE: user/GUI input [input_A]&apos; r
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000751 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000751">
-        <rdfs:label>subject has as object this entry&apos;s specific individual in memory (of class)</rdfs:label>
+        <rdfs:label>subject has as object this document&apos;s specific individual in memory (of class)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000751</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This annotation property is used in combination with the various subject annotation properties to further narrow in and specify, which resource is the target. It provides additional information for identifying the resource that should be the subject. Here, a specific resource is specified that takes the subject position in a triple in which the targeted resource takes the object position. This triple can be found in the temporary memory, where it has been saved because of a previous execution step of this workflow.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000967"/>
@@ -4387,9 +4387,9 @@ The SPrO variable resource &apos;SPrO_VARIABLE: user/GUI input [input_A]&apos; r
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000752 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000752">
-        <rdfs:label>update URIs using namespace of entry ID</rdfs:label>
+        <rdfs:label>update URIs using namespace of document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000752</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">This annotation property specifies the entry ID from which the namespace must be taken for updating the URIs.</obi:IAO_0000115>
+        <obi:IAO_0000115 xml:lang="en">This annotation property specifies the document version ID from which the namespace must be taken for updating the URIs.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000678"/>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000001030"/>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000001071"/>
@@ -5105,9 +5105,9 @@ Like any other &apos;execution step&apos; annotation, the string part is used fo
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000803 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000803">
-        <rdfs:label>identify this entry&apos;s specific individual of</rdfs:label>
+        <rdfs:label>identify this document&apos;s specific individual of</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000803</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">This annotation property specifies a class for which the corresponding instance of the entry that is currently in focus must be identified.</obi:IAO_0000115>
+        <obi:IAO_0000115 xml:lang="en">This annotation property specifies a class for which the corresponding instance of the document that is currently in focus must be identified.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000601"/>
     </owl:AnnotationProperty>
     
@@ -5675,7 +5675,7 @@ The SPrO variable resource &apos;SPrO_VARIABLE: identified resource(s) [input_K]
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000844 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000844">
-        <rdfs:label>search restricted to entry URI (except for terminal counter value)</rdfs:label>
+        <rdfs:label>search restricted to document URI (except for terminal counter value)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000844</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This annotation property specifies an entry ID. The result of the search that is specified in accompanying annotation properties is restricted to resources that share the same URI as the here specified entry ID, with the exception that their last value may differ (i.e. the counter value that follows the last &quot;_&quot;).</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000827"/>
@@ -5984,11 +5984,11 @@ E.g. when the class &apos;entry component&apos; is specified, all resources refe
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000868 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000868">
-        <rdfs:label>set new focus on entry ID (individual of)</rdfs:label>
+        <rdfs:label>set new focus on document ID (individual of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000868</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This annotation specifies a class of entry ID that defines the focus for the ongoing action. Based on the specified class and the point from which the respective action has been triggered, the middleware is able to identify the individual entry ID that defines the entry in focus. Based on this focus, the middleware is able to resolve all references to classes that are intended to be references to individual resources to the respective individual resources.
 
-This specified focus holds in all subsequent execution steps of this action, until another &apos;set new focus on entry ID&apos; annotation changes the focus again.
+This specified focus holds in all subsequent execution steps of this action, until another &apos;set new focus on document ID&apos; annotation changes the focus again.
 
 If used within an execution step, this annotation is executed first before any other annotations of this execution step can be executed.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000928"/>
@@ -6281,7 +6281,7 @@ This triple statement must be added to the named graph specified in another anno
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000889 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000889">
-        <rdfs:label>load from/save to/update in named graph (this entry&apos;s specific individual of)</rdfs:label>
+        <rdfs:label>load from/save to/update in named graph (this document&apos;s specific individual of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000889</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;load from/save to/update in named graph&apos;, with the difference that the range is an individual of the specified class that refers to the entry ID that is currently in focus.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000522"/>
@@ -6673,9 +6673,9 @@ The SPrO variable resource &apos;SPrO_VARIABLE: generated resource [input_46]&ap
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000916 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000916">
-        <rdfs:label>hidden when in entry status</rdfs:label>
+        <rdfs:label>hidden when in document status</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000916</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">Specifies information or components that are hidden if entry is in the specified entry status.</obi:IAO_0000115>
+        <obi:IAO_0000115 xml:lang="en">Specifies information or components that are hidden if document is in the specified document status.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000999"/>
     </owl:AnnotationProperty>
     
@@ -6774,9 +6774,9 @@ note: it is important to realize that this triple statement is linked to the ent
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000923 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000923">
-        <rdfs:label>subject (this entry&apos;s specific individual of)</rdfs:label>
+        <rdfs:label>subject (this document&apos;s specific individual of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000923</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;subject&apos;, with the difference that the range is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this entry ID&apos; refers to).
+        <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;subject&apos;, with the difference that the range is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this document version ID&apos; refers to).
 
 This is for instance used when referring to a specific entry component of which several individuals exist in a given composition.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000967"/>
@@ -7443,7 +7443,7 @@ note: it is important to realize that this triple statement is linked to the ent
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000971 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000971">
-        <rdfs:label>object has associated entry ID</rdfs:label>
+        <rdfs:label>object has associated document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000971</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;object&apos;, with the difference that the range is an individual of the specified class and refers to an entry component which itself (or one of its parent components) has the specified entry ID associated through the object property &apos;has associated entry ID&apos;. This is for instance used when referring to entry components within the core ID named graph that are associated with this entry ID.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000967"/>
@@ -7734,7 +7734,7 @@ The SPrO variable resource &apos;SPrO_VARIABLE: generated resource [action-input
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000000991 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000000991">
-        <rdfs:label>subject has associated entry ID</rdfs:label>
+        <rdfs:label>subject has associated document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000991</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;subject&apos;, with the difference that the range is an individual of the specified class and refers to an entry component which itself (or one of its parent components) has the specified entry ID associated through the object property &apos;has associated entry ID&apos;. This is for instance used when referring to entry components within the core ID named graph that are associated with this entry ID.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000967"/>
@@ -8086,9 +8086,9 @@ The SPrO variable resource &apos;SPrO_VARIABLE: identified resource(s) [input_22
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001017 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001017">
-        <rdfs:label>has selected part (this entry&apos;s specific individual of class)</rdfs:label>
+        <rdfs:label>has selected part (this document&apos;s specific individual of class)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001017</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">This annotation property specifies an element from the partonomy of a MDB morphological description entry, which should be selected in the interface to which the application switches. The range of this property is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this entry ID&apos; refers to).</obi:IAO_0000115>
+        <obi:IAO_0000115 xml:lang="en">This annotation property specifies an element from the partonomy of a MDB morphological description entry, which should be selected in the interface to which the application switches. The range of this property is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this document version ID&apos; refers to).</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000721"/>
     </owl:AnnotationProperty>
     
@@ -8121,7 +8121,7 @@ The default value is &apos;false&apos;.</obi:IAO_0000115>
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001020 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001020">
-        <rdfs:label>set new focus on entry ID for this execution step</rdfs:label>
+        <rdfs:label>set new focus on document ID for this execution step</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001020</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This annotation specifies an entry ID that takes the function of the entry currently in focus for this execution step only. In other words, the SPrO variable resource &apos;this entry ID&apos; and all its associated SPrO variable resources will refer to the specified entry ID and its associated resources, just as if the action had been triggered with the specified entry ID in focus. This change in focus to the specified entry ID is restricted to this execution step and will return to the former focus when the execution step has been executed.
 
@@ -8175,10 +8175,10 @@ A particular SPrO variable resource &apos;SPrO_VARIABLE: associated &apos;list o
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001024 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001024">
-        <rdfs:label>triggers &apos;hidden&apos; (this entry&apos;s specific individual of)</rdfs:label>
+        <rdfs:label>triggers &apos;hidden&apos; (this document&apos;s specific individual of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001024</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This annotation property specifies a GUI component (usually an entry component), for which the visibility value is set to &apos;hidden&apos; when this button is clicked (annotation property &apos;hidden [BOOLEAN]&apos; = true). It has precedence over the annotation property &apos;default visibility&apos;.
-The range of this property is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this entry ID&apos; refers to).</obi:IAO_0000115>
+The range of this property is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this document version ID&apos; refers to).</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000850"/>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000999"/>
     </owl:AnnotationProperty>
@@ -8188,9 +8188,9 @@ The range of this property is an individual of the specified class that refers t
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001025 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001025">
-        <rdfs:label>hidden when not in entry status</rdfs:label>
+        <rdfs:label>hidden when not in document status</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001025</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">Specifies information or components that are hidden if entry is NOT in the specified entry status.</obi:IAO_0000115>
+        <obi:IAO_0000115 xml:lang="en">Specifies information or components that are hidden if document is NOT in the specified document status.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000999"/>
     </owl:AnnotationProperty>
     
@@ -8199,9 +8199,9 @@ The range of this property is an individual of the specified class that refers t
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001026 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001026">
-        <rdfs:label>has associated entry type icon</rdfs:label>
+        <rdfs:label>has associated document type icon</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001026</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">This annotation property specifies the entry type icon for this entry type.</obi:IAO_0000115>
+        <obi:IAO_0000115 xml:lang="en">This annotation property specifies the document type icon for this document type.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000925"/>
     </owl:AnnotationProperty>
     
@@ -8289,9 +8289,9 @@ The SPrO variable resource &apos;SPrO_VARIABLE: input of type [info-input_13]&ap
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001033 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001033">
-        <rdfs:label>subject (this entry&apos;s specific individual in memory of)</rdfs:label>
+        <rdfs:label>subject (this document&apos;s specific individual in memory of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001033</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;subject&apos;, with the difference that the range is an individual of the specified class that refers to the entry ID that is current in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this entry ID&apos; refers to) AND the individual is currently held in memory.
+        <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;subject&apos;, with the difference that the range is an individual of the specified class that refers to the entry ID that is current in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this document version ID&apos; refers to) AND the individual is currently held in memory.
 
 This is for instance used when referring to a specific entry component of which several individuals exist in a given composition.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000967"/>
@@ -8371,10 +8371,10 @@ A particular SPrO variable resource &apos;SPrO_VARIABLE: associated &apos;list o
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001039 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001039">
-        <rdfs:label>triggers &apos;visible&apos; (this entry&apos;s specific individual of)</rdfs:label>
+        <rdfs:label>triggers &apos;visible&apos; (this document&apos;s specific individual of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001039</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This annotation property specifies a GUI component (usually an entry component), for which the visibility value is set to &apos;visible&apos; when this button is clicked (annotation property &apos;hidden [BOOLEAN]&apos; = false). It has precedence over the annotation property &apos;default visibility&apos;.
-The range of this property is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this entry ID&apos; refers to).</obi:IAO_0000115>
+The range of this property is an individual of the specified class that refers to the entry ID that is currently in focus (the one to which the SPrO variable &apos;SPrO_VARIABLE: this document version ID&apos; refers to).</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000850"/>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000999"/>
     </owl:AnnotationProperty>
@@ -8524,9 +8524,9 @@ The SPrO variable resource &apos;SPrO_VARIABLE: identified resource(s) [input_5]
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001050 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001050">
-        <rdfs:label>set new focus on entry ID</rdfs:label>
+        <rdfs:label>set new focus on document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001050</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">This annotation specifies an entry ID that takes the function of the entry currently in focus for the ongoing action. In other words, the SPrO variable resource &apos;this entry ID&apos; and all its associated SPrO variable resources will refer to the specified entry ID and its associated resources, just as if the action had been triggered with the specified entry ID in focus. This change in focus to the specified entry ID holds in all subsequent execution steps of this action, until another &apos;set new focus on entry ID&apos; annotation changes the focus again.
+        <obi:IAO_0000115 xml:lang="en">This annotation specifies an entry ID that takes the function of the entry currently in focus for the ongoing action. In other words, the SPrO variable resource &apos;this entry ID&apos; and all its associated SPrO variable resources will refer to the specified entry ID and its associated resources, just as if the action had been triggered with the specified entry ID in focus. This change in focus to the specified entry ID holds in all subsequent execution steps of this action, until another &apos;set new focus on document ID&apos; annotation changes the focus again.
 
 If used within an execution step, this annotation is executed first before any other annotations of this execution step can be executed.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000928"/>
@@ -8663,9 +8663,9 @@ The SPrO variable resource &apos;SPrO_VARIABLE: identified resource(s) [input_4]
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001060 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001060">
-        <rdfs:label>update URIs of and in named graphs using namespace of entry ID</rdfs:label>
+        <rdfs:label>update URIs of and in named graphs using namespace of document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001060</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">This annotation property specifies the entry ID from which the namespace must be taken for updating the URIs of and in the copied named graphs.</obi:IAO_0000115>
+        <obi:IAO_0000115 xml:lang="en">This annotation property specifies the document version ID from which the namespace must be taken for updating the URIs of and in the copied named graphs.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000001071"/>
     </owl:AnnotationProperty>
     
@@ -8674,7 +8674,7 @@ The SPrO variable resource &apos;SPrO_VARIABLE: identified resource(s) [input_4]
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001061 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001061">
-        <rdfs:label>load from/save to/update in multiple named graphs (this entry&apos;s specific individuals of)</rdfs:label>
+        <rdfs:label>load from/save to/update in multiple named graphs (this document&apos;s specific individuals of)</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001061</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;load from/save to/update in named graph (individual of)&apos;, with the difference that the range refers to all individuals of the specified class that refer to the entry ID that is currently in focus.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000522"/>
@@ -8755,7 +8755,7 @@ The SPrO variable resource &apos;SPrO_VARIABLE: user/GUI input [input_A]&apos; r
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001067 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001067">
-        <rdfs:label>trigger action on entry ID</rdfs:label>
+        <rdfs:label>trigger action on document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001067</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This annotation specifies an entry ID other than the one currently in focus, for which a workflow action must be triggered that is specified in another annotation.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000001076"/>
@@ -8810,7 +8810,7 @@ Like any other &apos;execution step&apos; annotation, the string part is used fo
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001072 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001072">
-        <rdfs:label>load from/save to/update in all named graphs (this entry&apos;s specific individual of) of this SPrO variable list</rdfs:label>
+        <rdfs:label>load from/save to/update in all named graphs (this document&apos;s specific individual of) of this SPrO variable list</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001072</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">Same as the annotation &apos;load from/save to/update in named graph (this entry&apos;s specific individual of)&apos;, with the difference that the range is a list of named graph classes from which the individuals that refer to the entry ID that is currently in focus must be inferred.</obi:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&spro;SPRO_0000000522"/>
@@ -8866,7 +8866,7 @@ The SPrO variable resource &apos;SPrO_VARIABLE: generated resource [input_35]&ap
     <!-- http://www.soccomas.org/Ontologies/SOCCOMAS/SprO#SPRO_0000001076 -->
 
     <owl:AnnotationProperty rdf:about="&spro;SPRO_0000001076">
-        <rdfs:label>execution step: trigger workflow action for entry ID</rdfs:label>
+        <rdfs:label>execution step: trigger workflow action for document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000001076</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This annotation property is used to trigger a specific workflow action for a specific entry ID other than the entry ID currently in focus. Which entry ID and which workflow action are specified in further annotations.
 
@@ -10062,7 +10062,7 @@ The object of this triple statement represents the generated resource [input_61]
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000018">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this &apos;entry-specific access-rights&apos; named graph</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this &apos;document-specific access-rights&apos; named graph</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000018</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -10189,7 +10189,7 @@ Whenever the SPrO variable is used in an execution step as placeholder for a res
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000031">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: previous draft &apos;entry ID&apos;</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: previous draft &apos;document version ID&apos;</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000031</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This refers to the entry ID of the previous draft version of this entry ID. This reference is more specific than a reference to earlier draft entry IDs, because it exclusively refers to the direct precursor entry ID. Reference to an earlier draft version includes also the previous entry ID.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -10267,7 +10267,7 @@ Side note: An instance resource associated to a child entry component takes prec
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000039">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: previous published &apos;entry ID&apos;</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: previous published &apos;document version ID&apos;</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000039</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This refers to a previous entry ID of an entry in &apos;published&apos; status, e.g. for the case when a new version is published. In this case a new entry ID is generated for the published revision and the entry ID of the earlier published version represents this previous published entry ID.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -10278,7 +10278,7 @@ Side note: An instance resource associated to a child entry component takes prec
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000040">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label xml:lang="de">SPrO_VARIABLE: this entry version number</rdfs:label>
+        <rdfs:label xml:lang="de">SPrO_VARIABLE: this document version number</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000040</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This belongs to the list of SPrO variable resources that must be dereferencable for every action triggered by a user (and for the accompanying tracking-procedures). It must unambiguosly refer to the version number part of the entry ID of the entry that is currently &apos;in focus&apos;.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -10373,7 +10373,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000048">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: earlier published &apos;entry ID&apos;</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: earlier published document version ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000048</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This refers to an entry ID of an earlier published version of this  entry ID. This reference is less specific than a reference to the previous published entry ID, which exclusively refers to the direct precursor entry ID. However, reference to an earlier published version includes also the previous published entry ID.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -10408,7 +10408,7 @@ The object of this triple statement represents the generated resource [action-in
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000051">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this entry&apos;s workspace</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this document version&apos;s workspace</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000051</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable resource dereferences the workspace URI of the entry ID currently in focus.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -10458,7 +10458,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000055">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this &apos;header&apos; named graph</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this &apos;document version contents&apos; named graph</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000055</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -10491,7 +10491,7 @@ The object of this triple statement represents the generated resource [input_54]
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000058">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: earlier draft &apos;entry ID&apos;</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: saved draft document version ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000058</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This refers to an entry ID of an earlier draft version of this entry ID. This reference is less specific than a reference to the previous draft entry ID, which exclusively refers to the direct precursor entry ID. However, reference to an earlier draft version includes also the previous entry ID.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -10530,7 +10530,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000062">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: &apos;crosslink panel&apos; resource of crosslinked entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: &apos;crosslink panel&apos; resource of crosslinked document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000062</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This is the individual entry component of the class &apos;crosslink panel&apos; that belongs to the crosslinked entry.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -10617,7 +10617,7 @@ Side note: An instance resource associated to a child entry component takes prec
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000071">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this &apos;core ID composition&apos; named graph</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this &apos;core document composition&apos; named graph</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000071</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -10643,9 +10643,9 @@ Side note: An instance resource associated to a child entry component takes prec
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000073">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this core ID</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this core document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000073</oboInOwl:id>
-        <obi:IAO_0000115 xml:lang="en">This belongs to the list of SPrO variable resources that must be dereferencable for every action triggered by a user (and for the accompanying tracking-procedures). It must unambiguosly refer to the core ID of the entry that is currently &apos;in focus&apos; or contributed to. The entry to which the entry component belongs that the user is currently interacting with.</obi:IAO_0000115>
+        <obi:IAO_0000115 xml:lang="en">This belongs to the list of SPrO variable resources that must be dereferencable for every action triggered by a user (and for the accompanying tracking-procedures). It must unambiguosly refer to the core document ID of the document that is currently &apos;in focus&apos; or contributed to. The document to which the document component belongs that the user is currently interacting with.</obi:IAO_0000115>
     </owl:NamedIndividual>
     
 
@@ -10681,7 +10681,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000078">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: &apos;crosslink-info&apos; named graph of crosslinked entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: &apos;crosslink-info&apos; named graph of crosslinked document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000078</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This is the &apos;crosslink-info&apos; named graph of the instance resource that is specified for this entry component or one of its parent components.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -10702,7 +10702,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000081">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this &apos;core ID&apos; named graph</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this &apos;core document contents&apos; named graph</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000081</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -10800,7 +10800,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000089">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this entry status transition</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this document status transition</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000089</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -10903,7 +10903,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000098">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: all published &apos;entry ID&apos;s</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: all published &apos;document version ID&apos;s</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000098</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This refers to a list of entry IDs, all of which are published versions of &apos;this core ID&apos;. The IDs can be identified by running a SPARQL query in the &apos;versions and provenance named graph&apos; of &apos;this core ID&apos; with:
 
@@ -11055,7 +11055,7 @@ Side note: A value associated to a child entry component takes precedence over a
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000112">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: read entry-access-right to this entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: read document-access-right to this document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000112</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -11065,7 +11065,7 @@ Side note: A value associated to a child entry component takes precedence over a
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000113">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: current published entry ID</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: current published document version ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000113</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to the entry ID with the entry status &apos;SOCCOMAS_ENTRY_STATUS_BASIC: current published&apos;.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -11087,7 +11087,7 @@ Side note: A value associated to a child entry component takes precedence over a
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000116">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: &apos;link target panel&apos; resource for (cross)linked entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: &apos;link target panel&apos; resource for (cross)linked document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000116</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This is the individual entry component of the class &apos;link target panel&apos; which must contain the entry components for representing the (cross)linked entry.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -11172,7 +11172,7 @@ The object of this triple statement represents the generated resource [input_60]
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000123">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: publish entry-access-right to this entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: publish document-access-right to this document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000123</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -11371,7 +11371,7 @@ The object of this triple statement represents the generated resource [input_62]
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000142">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this entry&apos;s list of parts</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this description&apos;s list of parts</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000142</oboInOwl:id>
         <oboInOwl:id xml:lang="en">This SPrO variable refers to the list of resources that are the parts described for this description entry.</oboInOwl:id>
     </owl:NamedIndividual>
@@ -11393,7 +11393,7 @@ The object of this triple statement represents the generated resource [input_62]
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000145">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this entry status</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this document status</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000145</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to the entry status (e.g. &apos;current draft&apos;, &apos;saved draft&apos; etc) of this entry ID.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -11596,7 +11596,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000164">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: entry type icon corresponding to &apos;input of type [info-input_1]&apos;</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: document type icon corresponding to &apos;input of type [info-input_1]</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000164</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to the individual resource of the subclass of &apos;entry type icon item&apos; that corresponds with the type of entry specified with the annotation &apos;input of type [info-type_1]&apos;.
 
@@ -11908,7 +11908,7 @@ Whenever the SPrO variable is used in an execution step as placeholder for a res
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000196">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: all &apos;entry type icon&apos; individuals</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: all &apos;document type icon&apos; individuals</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000196</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to all individuals of the type &apos;entry type icon item&apos; in a specified named graph.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -12201,7 +12201,7 @@ Side note: An instance resource associated to a child entry component takes prec
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000223">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this &apos;entry status in time&apos;</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this &apos;document status in time&apos;</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000223</oboInOwl:id>
         <rdfs:comment xml:lang="en">This refers to the instance of the class &apos;entry status in time&apos; that represents the entry status in time before the status transition workflow action takes effect.</rdfs:comment>
     </owl:NamedIndividual>
@@ -12240,7 +12240,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000226">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this entry ID</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this document version ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000226</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This belongs to the list of SPrO variable resources that must be dereferencable for every action triggered by a user (and for the accompanying tracking-procedures). It must unambiguosly refer to the entry ID of the entry that is currently &apos;in focus&apos; or contributed to. The entry to which the entry component belongs that the user is currently interacting with. 
 When used in a workflow action description, this SPrO variable refers to the entry ID from which the action has been triggered.</obi:IAO_0000115>
@@ -12302,7 +12302,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000232">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this &apos;user entry ID&apos; named graph</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this &apos;user document ID&apos; named graph</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000232</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to the instance of the class &apos;user entry ID named graph&apos;. The respective named graph belongs to this user ID.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -12416,7 +12416,7 @@ The object of this triple statement represents the generated resource [input_52]
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000241">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: resource about which the crossliked entry makes assertions</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: resource about which the crossliked document makes assertions</rdfs:label>
         <obi:IAO_0000115 xml:lang="en">Every entry makes assertions about a particular object. The respective resource can be identified for each entry. This SPrO variable refers to exactly this resource in the crosslinked entry.</obi:IAO_0000115>
         <oboInOwl:id xml:lang="en">SPRO_0000000241</oboInOwl:id>
     </owl:NamedIndividual>
@@ -12486,7 +12486,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000249">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this &apos;agent entry-access-rights&apos; named graph</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this &apos;agent document-access-rights&apos; named graph</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000249</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to the instance of the class &apos;agent entry-access-rights named graph&apos;. The respective named graph belongs to this user ID.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -12536,7 +12536,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000253">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: edit entry-access-right to this entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: edit document-access-right to this document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000253</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -12610,7 +12610,7 @@ Side note: An instance resource associated to a child entry component takes prec
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000259">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this &apos;user entry-composition&apos; named graph</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this &apos;user document-composition&apos; named graph</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000259</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to the instance of the class &apos;user entry-composition named graph&apos;. The respective named graph belongs to this user ID.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -12852,7 +12852,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000281">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this group entry ID</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this group document ID</rdfs:label>
         <oboInOwl:id xml:lang="de">SPRO_0000000281</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -12965,7 +12965,7 @@ Side note: An instance resource associated to a child entry component takes prec
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000290">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: &apos;highest existing version number among all entries of this core ID&apos; + 1</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: &apos;highest existing version number among all document versions of this core document ID&apos; + 1</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000290</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to a version number that is one higher than the highest currently existing version number of all entries of this core ID.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -13018,7 +13018,7 @@ Side note: An instance resource associated to a child entry component takes prec
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000298">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: all &apos;entry-composition&apos; named graphs of this core ID</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: all &apos;entry-composition&apos; named graphs of this core document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000298</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to all the &apos;entry-composition&apos; named graphs of all entry versions of this core ID.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -13133,7 +13133,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000307">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: creator of this entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: creator of this document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000307</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -13360,7 +13360,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000330">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: version number of the &apos;currently published version&apos; of this core ID + 1</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: version number of the &apos;currently published version&apos; of this core document ID + 1</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000330</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to a version number that is one higher than the version number of the &apos;currently published version&apos; of this core ID.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -13469,7 +13469,7 @@ The object of this triple statement represents the generated resource [action-in
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000339">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: entry currently in focus</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: document version currently in focus</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000339</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This belongs to the list of SPrO variable resources that must be dereferencable for every action triggered by a user (and for the accompanying tracking-procedures). It must unambiguosly refer to the entry ID that is currently in focus.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -13772,7 +13772,7 @@ The object of this triple statement represents the generated resource [input_66]
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000371">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: &apos;time interval&apos; of this &apos;entry status in time&apos;</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: &apos;time interval&apos; of this &apos;document status in time&apos;</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000371</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This refers to the instance of the class &apos;time interval&apos; that is linked to an instance of the class &apos;entry status in time&apos; that represents the entry status in time before the status transition workflow action takes effect.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -13842,7 +13842,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000378">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this &apos;core ID individuals&apos; named graph</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this &apos;core document individuals&apos; named graph</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000378</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -13852,7 +13852,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000379">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this entry version ID</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this version ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000379</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to the version ID of this entry. The version ID is not the entry ID, it is only a part of it.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -13932,7 +13932,7 @@ The object of this triple statement represents the generated resource [input_51]
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000386">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: individual of crosslinked entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: individual of crosslinked document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000386</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to the resource that is identified based on the &apos;individual of class in crosslinked graph&apos; annotation.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -14112,7 +14112,7 @@ The object of this triple statement represents the generated resource [input_64]
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000402">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this entry change-log</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this document change-log</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000402</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -14219,7 +14219,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000415">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: comment entry-access-right to this entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: comment document-access-right to this document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000415</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -14350,7 +14350,7 @@ O: morphological description metadata form composition named graph (=named graph
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000427">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: assign-rights entry-access-right to this entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: assign-rights document-access-right to this document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000427</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -14481,7 +14481,7 @@ Whenever the SPrO variable is used in an execution step as placeholder for a res
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000440">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this user entry ID</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this user document ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000440</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This belongs to the list of SPrO variable resources that must be dereferencable for every action triggered by a user (and for the accompanying tracking-procedures). It must unambiguosly refer to the user entry ID of the user who triggered the action.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -14526,7 +14526,7 @@ The object of this triple statement represents the generated resource [input_50]
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000446">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: this crosslinked entry ID</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: this crosslinked document version ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000446</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -14536,7 +14536,7 @@ The object of this triple statement represents the generated resource [input_50]
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000447">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: all draft &apos;entry ID&apos;s</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: all draft &apos;document version ID&apos;s</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000447</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This refers to a list of entry IDs, all of which are draft versions of &apos;this core ID&apos;. The IDs can be identified by running a SPARQL query in the &apos;versions and provenance named graph&apos; of &apos;this core ID&apos; with:
 
@@ -14621,7 +14621,7 @@ o: ?</obi:IAO_0000115>
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000456">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: delete entry-access-right to this entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: delete document-access-right to this document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000456</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -14711,7 +14711,7 @@ Side note: An instance resource associated to a child entry component takes prec
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000465">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: create-new-version entry-access-right to this entry</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: create-new-version document-access-right to this document</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000465</oboInOwl:id>
     </owl:NamedIndividual>
     
@@ -14721,7 +14721,7 @@ Side note: An instance resource associated to a child entry component takes prec
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000466">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: current (revision) draft entry ID</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: current (revision) draft document version ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000466</oboInOwl:id>
         <obi:IAO_0000115 xml:lang="en">This SPrO variable refers to the entry ID of the current draft or revision draft version of &apos;this core ID&apos;.</obi:IAO_0000115>
     </owl:NamedIndividual>
@@ -14803,7 +14803,7 @@ If this triple statement does not exist, the respective resource must be generat
 
     <owl:NamedIndividual rdf:about="&spro;SPRO_0000000473">
         <rdf:type rdf:resource="&spro;SPRO_0000000244"/>
-        <rdfs:label>SPrO_VARIABLE: &apos;time interval&apos; of this entry ID</rdfs:label>
+        <rdfs:label>SPrO_VARIABLE: &apos;time interval&apos; of this document version ID</rdfs:label>
         <oboInOwl:id xml:lang="en">SPRO_0000000473</oboInOwl:id>
         <obi:IAO_0000115>This refers to the instance of the class &apos;time interval&apos; that is linked to the entry ID that is currently in focus, before a triggered workflow action takes effect.</obi:IAO_0000115>
     </owl:NamedIndividual>
